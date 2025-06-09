@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<style>
+    #cont{
+       color:rgb(255, 255, 255);
+        background-image: linear-gradient( rgb(0, 204, 255) , rgb(0, 115, 255));
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        position: absolute;
+        left:10px;
+        padding: 10px;
+        border-radius: 20px;
+        
+        display: inline-block;}
+</style>
+<body>
+    <div id="cont">
+        <h1>
+            welcome to my web
+        </h1>
+    </div>
+    <script>
+        $(document).ready(function(){
+     
+          $("#cont").animate({left:"400px"},1000).delay(100).animate({top:"200px"},1000).delay(100)
+          .animate({fontSize:"40px",left:"+=20"},1000)
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script> 
+     
+    <title>Document</title>
+</head>
+
+<style>
+    #naa{
+        width: 100%;
+        height: 50px;
+        background-color: aqua;
+        overflow: hidden;
+        margin: auto;
+        
+    }
+    #bb{
+        width:80%;
+        height:500px;
+        box-shadow : 10px 10px 10px red;
+        margin:auto;
+        border: 10px ridge red;
+        overflow:hidden;
+        
+        
+    }
+    .a{
+        width: 100%;
+        height:100%;
+       
+    }
+</style>
+<body>
+    <div id="naa">
+
+    </div>
+    </br>
+    <div id="bb">
+    <img src="images/a1.jpg" class="a">
+        <img src="images/a2.jpg" class="a">
+          <img src="images/a3.jpg" class="a">
+            <img src="images/a4.jpg" class="a">
+
+     
+
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+  $('#bb').cycle({fx:'shuffle',delay:-4000,});
+})
+</script>
+</html>
