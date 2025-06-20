@@ -306,25 +306,29 @@ color: rgb(255, 255, 255);
 height: 450px;
 display: flex;
 background-color: #593cec;
-padding: 5px;
-margin-top: 20px;}
+
+margin-top: 20px;
+margin-bottom: -5px;}
 #f2
 {padding: 60px;}
+
 #frame1{width: 600px;
-height: 450px; padding: 4px;}
+height: 400px; padding: 6px;
+margin-top: 20px;margin-left: 25px;}
+
 #frame2{width: 600px;
-height: 315px; padding: 4px;}
+height: 315px; padding: 3px;}
 
 #last{width:100%;
 height: 280px;
 color: rgb(255, 255, 255);
 display: inline-flex;
-
 font-size: 10px;
-margin-top: 5px;
+padding: 5px;
 font-family:"Archivo", sans-serif; ;
 background-color: #494949;}
-#last li{padding: 6px;}
+#last li{padding: 6px;
+}
 </style>
 
 
@@ -416,14 +420,13 @@ background-color: #494949;}
  
  /* Extra small devices (phones, 600px and down)  */
 
-@media only screen and (max-width: 380px){
-body{overflow: hidden;}
-
-
-
+@media only screen and (max-width: 390px){
+body{background-color: #ffffff;
+}
+.slider {display:none}
 #nav{
         display: flex;
-     
+      margin-top: -2px;
         width:90%;
         height:50px;
         overflow: hidden;
@@ -431,7 +434,7 @@ body{overflow: hidden;}
     }
     #logo{
       
-       margin-top: 10px;
+       margin-top: 1px;
        margin-left: 1px;
        width: 10%;
        display: none;
@@ -491,9 +494,8 @@ width:12400px;
 height:60px;
 font-size:18px;
 margin-top: 20px;
-position: fixed;
+position:fixed;
 color:white;
-
 position:relative;
 animation:one 30s infinite linear;
 }
@@ -510,7 +512,7 @@ animation:one 30s infinite linear;
   #bm{width:100%;
   height: 90%;
 
-  color:#21a2ff;
+  color:#217dff;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
 padding:5px ;
@@ -610,19 +612,21 @@ margin: auto;}
 height: 800px;
 display: block;
 background-color: #593cec;
-padding: 5px;
-margin-top: 20px;}
+padding: 10px;
+margin-top: 20px;
+}
 
 #f2
 {padding: 0px;}
 
-#frame1{width: 340px;
-height: 450px; 
+#frame1{width:300px;
+height: 350px; 
 padding:3px;}
 
-#frame2{width: 340px;
-height: 300px;
-padding:2px;
+#frame2{width: 300px;
+height: 350px;
+padding:3px;
+margin-left: 25px;
 }
 
 
@@ -631,10 +635,9 @@ height: 250px;
 color: rgb(255, 255, 255);
 display: flex ;
 flex-wrap: wrap;
-margin-left: -35px;
+margin-left: -40px;
 font-size: 12px;
 margin-top: 5px;
-
 font-family:"Archivo", sans-serif; ;
 background-color: #494949;}
 #last li{padding: 1px;
