@@ -147,7 +147,17 @@ p {
     margin-left: px;
     padding: 4px;
 }
+    .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background:url(images/11.png); 
+    background-size: 100%,100%;
     
+}
+
 }
 .menu-item:hover {
     color: #36b864;
@@ -177,7 +187,7 @@ p {
 .hero-section {
     
     position: relative;
-    height: 500px;
+    height: 600px;
     margin-top: 30px;
     overflow: hidden;
 }
@@ -235,7 +245,7 @@ p {
     .hero-section {
     
     position: relative;
-    height: 290px;
+    height: 330px;
     margin-top: 0px;
     overflow: hidden;
 }
@@ -245,7 +255,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    height: 180px;
     background:url(images/11.png); 
     background-size: 100%,100%;
     
