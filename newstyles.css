@@ -1,0 +1,111 @@
+body{
+    background:url(images/gra.jpg);
+}
+#navbar{display: flex;
+margin-left: 30px;}
+#logo{color:white;
+ font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+
+margin-top: -18px;
+  font-style: normal;
+font-size: 25px;}
+#bar{margin-top: 20px;
+margin-left: 250px;}
+#bar li{ list-style: none;
+    
+}
+
+#bar li ul{display: inline;
+margin: 40px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 500;
+padding: 5px;
+color: white;
+font-size: larger;
+;}
+#bar li ul:hover{display: inline;
+margin: 40px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 500;
+  text-decoration: underline rgb(230, 0, 255)3px;
+  text-underline-position: auto;
+padding: 5px;
+color: white;
+font-size: larger;
+;}
+#navbar button{
+  font-size:18px;
+  color: white;
+  background-color: rgb(93, 5, 236);
+   display: inline-block;
+  border: none;
+  width:110px;
+  height: 60px;
+  padding: 1px;
+  border-radius: 10px;
+  margin-left:140px;
+  margin-top: 5px;
+  transition: 0.4s;
+}
+#navbar button:hover{
+  font-size:20px;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 392px) {
+   
+#navbar{display: flex;
+
+margin-left: 1px;
+}
+
+#logo{color:rgb(255, 255, 255);
+ font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 00;
+margin-top: px;
+  font-style: normal;
+font-size: 15px;}
+
+
+#bar{margin:auto;
+display: inline;}
+
+#bar li{ list-style: none;
+   
+    margin-top: -15px;
+}
+
+#bar li ul{display:inline;
+    
+margin:2px;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 500;
+padding: -px;
+color: white;
+font-size:10px;
+;}
+
+#navbar button{
+  font-size:8px;
+  color: white;
+  width: 40px;
+  height:30px;
+  background-color: rgb(68, 1, 175);
+   display: inline-block;
+  border: none;
+  
+  border-radius: 10px;
+  
+  
+  transition: 0.4s;
+}
+#navbar button:hover{
+  font-size:20px;
+  cursor: pointer;
+}
+
+    
+}
