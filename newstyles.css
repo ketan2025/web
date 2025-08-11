@@ -1,5 +1,6 @@
 body{
     background:url(images/gra.jpg);
+    background-size: 100%,100%;
 }
 #navbar{display: flex;
 margin-left: 30px;}
@@ -109,3 +110,40 @@ font-size:10px;
 
     
 }
+
+.container{width: 100%;
+  display: flex;
+height: 100%;
+margin-left: 10px;
+margin-top: 90px;}
+.con{width: 80%;}
+.container h1{color: white;
+   font-family: "PT Sans Narrow", sans-serif;
+   font-size: 40px;
+}
+.container span{color: rgb(219, 243, 5);
+text-transform: capitalize;
+font-size: 60px;
+ font-family: "PT Sans Narrow", sans-serif;}
+
+ .container p{color: #ffffff;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 20px;
+}
+#ima{width:40%;
+margin-top: 20px;
+margin-left: 40px;
+}
+
+.pic{width: 400px;
+ transform: rotatez(-20deg);
+  transform-style: preserve-3d;
+  transition: 0.4s;
+border-radius: 0px;  
+;}
+
+.pic:hover{width: 420px;
+  transform: rotatez(0deg);
+  border-radius: 10px; 
+
+;}
