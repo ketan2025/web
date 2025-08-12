@@ -10,6 +10,7 @@
 <script src="https://www.gstatic.com/charts/loader.js"></script>
     <title>index page </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <style>
     html{overflow-x: hidden;}
@@ -72,6 +73,7 @@ margin: 5px;
         <li class="nav-item">
           <a class="nav-link  p-3 m-3" href="h.html">Homework</a>
         </li>
+          
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle p-3 m-3" href="h.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Work links
@@ -83,6 +85,7 @@ margin: 5px;
           </ul>
         </li>
       </ul>
+      <input type="color" id="mybox">
     </div>
   </div>
 </nav>
@@ -92,9 +95,49 @@ margin: 5px;
 
 
 <style>
-   
+   input{
+    width: 80px;
+    text-align: center;
+}
+
 </style>
+
+
+<script>
+
+var c = document.getElementById("mybox")
+var a = document.getElementById("kk")
+var b = document.getElementById("oho")
+var d = document.getElementById("eduuu")
+var e = document.getElementById("soft")
+var f = document.getElementById("rec")
+var g = document.getElementById("etra")
+var h = document.getElementById("footer")
+
+c.onchange=function()
+{
+kk.style.color=c.value
+oho.style.color=c.value
+eduuu.style.color=c.value
+soft.style.color=c.value
+rec.style.color=c.value
+etra.style.color=c.value
+footer.style.background=c.value
+
+a.style.color=c.value
+b.style.color=c.value
+d.style.color=c.value
+e.style.color=c.value
+f.style.color=c.value
+g.style.color=c.value
+h.style.background=c.value
+}
+
+</script>
+
+
 <div class="row">
+
  <div class="coloum col-sm-12 col-md-12 col-lg-12 col-xl-12" >  
 <img src="images/ket.png" class="img-fluid float-end " id="pro">
 
@@ -102,13 +145,38 @@ margin: 5px;
 
 <h1 class="display-1 " id="kk">KETAN VERMA</h1>
 
-<h1 class="display-4 ">UI UX DESIGNER</h1>
-<p class="kn fs-5 " id="about">Hello!! Everyone my self Ketan verma I’m a passionate UI/UX Designer dedicated to creating intuitive and visually appealing digital experiences. My design approach centers around empathy, creativity, and problem-solving — ensuring every interface I design not only looks great but truly meets users’ needs.
+
+<h1 class="display-4" id="kk1">  <span id="kab"> </span></h1>
+
+
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+      <script>
+    var typed = new Typed('#kab', {
+      strings: ['UI UX DESIGNER','WEB DESIGNER.','WEB DEVELOPER.', '3D ARTIST.','MOTION GRAPHIC DESIGNER.','GRAPHIC DESIGNER.', 'FULL STACK DEVELOPER'],
+      typeSpeed: 60,
+      backSpeed:60,
+    loop: true
+  
+    });
+  </script>
+
+  
+
+
+
+
+
+<div id="tet">
+<p class="kn fs-5  " id="about">Hello!! Everyone my self Ketan verma I’m a passionate UI/UX Designer dedicated to creating intuitive and visually appealing digital experiences. My design approach centers around empathy, creativity, and problem-solving — ensuring every interface I design not only looks great but truly meets users’ needs.
 Proficient in tools like Figma, Adobe XD, Sketch, and more, I focus on delivering designs that balance aesthetics with functionality. I stay curious about new design trends, usability practices, and emerging technologies to keep my work fresh and effective</p>
-
+</div>
 </div>
 
 </div>
+
 
 <style>
 
@@ -167,7 +235,7 @@ padding: px;}
 <style>
   .display-2 {
 text-align: center;
-text-decoration: underline #00e1ff 4px;
+
 font-family: "Fira Sans", sans-serif;
  font-size: 60px;
   font-weight: 700;
@@ -206,7 +274,7 @@ padding: 10px;}
 </style>
 
 <div class="edu m-3">
-  <h1 class="display-2 m-4"> Education</h1>
+  <h1 class="display-2 m-4" id="eduuu"> Education</h1>
 </div>
 
 <div id="education">
@@ -232,7 +300,7 @@ padding: 10px;}
 </div>
 </div>
 <style>
-    #pp{width: 125px;
+    #pp{width: 123px;
     padding: -10px;
     transition: 0.5s;
 margin-left: 5px;
@@ -241,7 +309,18 @@ margin-left: 5px;
    border-width: medium;
    margin-top: 6px;
    border-radius: 15px; 
-    border-color: #00e1ff;}
+    border-color: transparent;}
+
+    #pp:hover{width: 125px;
+    padding: -10px;
+    transition: 0.5s;
+margin-left: 5px;
+ border-style: solid;
+  border-width: 1px;
+   border-width: medium;
+   margin-top: 6px;
+   border-radius: 15px; 
+    border-color: rgb(0, 255, 225);}
 
 
 .software{
@@ -260,7 +339,7 @@ margin-left: 5px;
     }
 </style>
 <div class="edu m-3">
-  <h1 class="display-2 m-4"> Software Skills</h1>
+  <h1 class="display-2 m-4" id="soft"> Software Skills</h1>
 </div>
 <div class="software">
     <img src="images/nag11.png" class="img-fluid" alt="..."id="pp">
@@ -272,17 +351,19 @@ margin-left: 5px;
       <img src="images/nag17.png" class="img-fluid" alt="..."id="pp">
       <img src="images/nag18.png" class="img-fluid" alt="..."id="pp">
       <img src="images/nag19.png" class="img-fluid" alt="..."id="pp">
-   <img src="images/nag1.png" class="img-fluid" alt="..." id="pp">
-      <img src="images/nag2.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag3.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag4.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag5.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag6.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag20.png" class="img-fluid" alt="..."id="pp">
       <img src="images/nag7.png" class="img-fluid" alt="..."id="pp">
       <img src="images/nag8.png" class="img-fluid" alt="..."id="pp">
       <img src="images/nag9.png" class="img-fluid" alt="..."id="pp">
       <img src="images/nag10.png" class="img-fluid" alt="..."id="pp">
+      <img src="images/nag5.png" class="img-fluid" alt="..."id="pp">
+      <img src="images/nag6.png" class="img-fluid" alt="..."id="pp">
+      <img src="images/nag20.png" class="img-fluid" alt="..."id="pp">
+   <img src="images/nag1.png" class="img-fluid" alt="..." id="pp">
+      <img src="images/nag2.png" class="img-fluid" alt="..."id="pp">
+      <img src="images/nag3.png" class="img-fluid" alt="..."id="pp">
+      <img src="images/nag4.png" class="img-fluid" alt="..."id="pp">
+      
+      
       
       
 </div>
@@ -292,8 +373,8 @@ margin-left: 5px;
 
 
 <div class="edu m-3">
-  <h1 class="display-2 m-4"> Recent Projects </h1>
-  <a href="botesite.html"><img src="images/site4.jpg"  class="img-fluid" id="bv"></a>
+  <h1 class="display-2 m-4" id="rec"> Recent Projects </h1>
+  <a href="AI.html"><img src="images/generated.jpg"  class="img-fluid" id="bv"></a>
   <a href="SMURF.HTML"><img src="images/sm.jpg"  class="img-fluid" id="bv"></a>
   <a href="aotm4.html"><img src="images/hhh.jpg"  class="img-fluid" id="bv"></a>
    
@@ -305,7 +386,7 @@ margin-left: 5px;
 </div>
 
 <div class="edu m-3">
-  <h1 class="display-2 m-4"> Extra Skills</h1>
+  <h1 class="display-2 m-4" id="etra"> Extra Skills</h1>
 </div>
 
 
@@ -419,5 +500,21 @@ footer h1{
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  ScrollReveal({ 
+  reset: false,
+  distance: '80px',
+  duration: 1200,
+  delay: 50
+
+});
+
+  ScrollReveal().reveal("#mybox,#oho", { origin: 'left'});
+  ScrollReveal().reveal("#pro", { origin: 'right'});
+  ScrollReveal().reveal("#pp", { origin: 'right'});
+  ScrollReveal().reveal("#eduuu,.edu", { origin: 'bottom'});
+</script>
   </body>
 </html>
