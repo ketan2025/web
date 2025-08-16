@@ -1,6 +1,15 @@
+    @keyframes one
+{
+from{left:30px;}
+to{left:-5000px;}
+}
+
 body{
-    background:url(images/gra.jpg);
-    background-size: 100%,100%;
+    background: radial-gradient(circle at bottom right, rgba(151, 0, 136, 0.778), transparent 60%),
+              radial-gradient(circle at top left, rgba(236, 8, 114, 0.7), transparent 60%),
+              linear-gradient(135deg, #0a0021, #1a0033 60%);
+  background-size: cover;
+  background-position: center;
     
 }
 #navbar{display: flex;
@@ -75,13 +84,14 @@ font-size: larger;
 
 @media only screen and (max-width: 392px) {
    body{
-   /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=6d1399&c2=510a75&gt=l&gd=dtl
-*/
-background: #6D1399;
-background: linear-gradient(135deg, #950184, #5e058b);
-    background-size: 100%,100%;}
+
+  background: radial-gradient(circle at bottom right, rgba(151, 0, 136, 0.778), transparent 60%),
+              radial-gradient(circle at top left, rgba(236, 8, 114, 0.7), transparent 60%),
+              linear-gradient(135deg, #0a0021, #1a0033 60%);
+  background-size: cover;
+  background-position: center;
+    
+}
    
 #navbar{display: flex;
 
@@ -269,9 +279,136 @@ margin-top: 80px;
 color: #dede02;
 margin-top: 15px;
 margin-left: 510px;}
+
+#ft:hover{justify-content:right;
+color: #00ffd0;
+cursor: pointer;
+margin-top: 15px;
+transition: 0.5s;
+margin-left: 510px;}
+
 #ft ul li {display: inline;
 margin: 10px;
  font-family: "PT Sans Narrow", sans-serif;
 font-size: 20px;
+font-weight: 500;
 color: #dede02;}
 
+@media only screen and (max-width: 392px) {
+
+#category{
+  background-color: #590065;
+margin-top: 80px;
+   display: flex;
+  flex-direction: column;
+  
+}
+#ct{ color: white;
+ 
+  font-size: 18px;
+  margin-left: 20px;
+ font-family: "PT Sans Narrow", sans-serif;}
+
+#ft{justify-content:left;
+color: #dede02;
+margin-top: 15px;
+
+margin-left: 4px;}
+
+#ft ul li {
+  display: block;
+margin: 4px;
+
+ font-family: "PT Sans Narrow", sans-serif;
+font-size: 20px;
+font-weight: 500;
+color: #dede02;}
+}
+
+
+
+
+section{color: white;
+  display:flex; 
+  font-family: Arial, Helvetica, sans-serif;
+justify-content:center;
+flex-wrap:wrap;
+font-size: 30px;}
+
+#card1{margin: 15px;}
+
+.card{width: 300px;
+height: 200px;
+transition: 0.5s;}
+
+.card:hover{width: 310px;
+height: 210px;}
+
+@media only screen and (max-width: 392px) {
+section{color: white;
+  display:flex; 
+  font-family: Arial, Helvetica, sans-serif;
+justify-content:center;
+flex-wrap:wrap;
+font-size: 30px;}
+
+#card1{margin: 15px;}
+
+.card{width: 300px;
+height: 200px;
+transition: 0.5s;}
+
+.card:hover{width: 310px;
+height: 210px;}
+
+}
+
+
+#CONTEST
+{
+
+ font-family: Arial, Helvetica, sans-serif;
+ overflow-block: none;
+ box-sizing:border-box;
+ padding: 2px;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style:bold;
+  margin-top: 0px;
+background-color:#6b0050;
+box-sizing:border-box;
+width:12400px;
+height:60px;
+font-size:18px;
+position: fixed;
+color:white;
+position:relative;
+animation:one 30s infinite linear;
+}
+
+
+@media only screen and (max-width: 392px) {
+body{
+  overflow-x: hidden;
+}
+
+  #CONTEST
+{
+ font-family: Arial, Helvetica, sans-serif;
+ overflow-block: none;
+ box-sizing:border-box;
+ padding: 2px;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style:bold;
+background-color:#6e007a;
+box-sizing:border-box;
+width:12400px;
+height:60px;
+font-size:18px;
+margin-top: 20px;
+position:fixed;
+color:white;
+position:relative;
+animation:one 30s infinite linear;
+}}
