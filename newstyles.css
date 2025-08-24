@@ -329,6 +329,7 @@ color: #dede02;}
 
 
 section{color: white;
+  cursor: pointer;
   display:flex; 
   font-family: Arial, Helvetica, sans-serif;
 justify-content:center;
@@ -342,6 +343,7 @@ height: 200px;
 transition: 0.5s;}
 
 .card:hover{width: 310px;
+  cursor: pointer;
 height: 210px;}
 
 @media only screen and (max-width: 392px) {
