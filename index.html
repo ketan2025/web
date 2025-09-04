@@ -1,520 +1,1091 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="https://www.gstatic.com/charts/loader.js"></script>
-    <title>index page </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
-  <style>
-    html{overflow-x: hidden;}
-    
-    body{
-        background-image: url(images/bk.jpg) ;
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Resume </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main34.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SnapFolio
+  * Template URL: https://bootstrapmade.com/snapfolio-bootstrap-portfolio-template/
+  * Updated: Jul 21 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Portfolio links </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="https://www.behance.net/ketanverma4">Graphics Portfolio</a></li>
+              <li class="dropdown">
+                  <li><a href="https://ketanverma3.artstation.com/">3D Portfolio</a></li>
+              <li class="dropdown">
+              
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+     
+       
+        <a href="https://www.instagram.com/ketan_v912/" class="instagram"><i class="bi bi-instagram"></i></a>
         
-    }
-   #mycolor{background-color: #f5f4f4;
-    margin-bottom: 8px;
-}
-  
-  
-   .row img{
-    width: 300px;
-    margin-right: 20px;
-    margin-top: 0px;
-   
-   }
+        <a href="https://www.linkedin.com/in/ketan-verma-18471b34b/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
 
-   .display-1 {
-text-align: center;
-margin-top: 20px;}
-
-.display-4 {
-text-align: center;
-margin-top: 10px;}
-
-.kn{text-align: center;
-margin-top: 10px;
-
-text-align: justify; 
-padding: 30px;
-margin: 5px;
-}
-
-#lo{width: 80%;
-}
-
-  </style>
-  <body>
-    <nav class="navbar navbar-expand-lg " id="mycolor">
-  <div class="container-fluid ">
-    <a class="navbar-brand fs-3 ms-2 " href="#"><img id="lo" src="images/lok-01.png" ></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon me-1"></span>
-    </button>
-
-    <div class="collapse navbar-collapse fs-4 " id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active p-3 m-3" aria-current="page" href="#kk">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  p-3 m-3" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  p-3 m-3" href="web work2.html">Web Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link  p-3 m-3" href="h.html">Homework</a>
-        </li>
-          
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle p-3 m-3" href="h.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Work links
-          </a>
-          <ul class="dropdown-menu  ">
-            <li ><a class="dropdown-item" href="https://www.behance.net/ketanverma4"><b>Graphic</b></a></li>
-            <li><a class="dropdown-item" href="https://ketanverma3.artstation.com/"><b>3D Work</b></a></li>
-    
-          </ul>
-        </li>
-      </ul>
-      <input type="color" id="mybox">
     </div>
-  </div>
-</nav>
 
+  </header>
 
+  <main class="main">
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
 
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+      </div>
 
-<style>
-   input{
-    width: 80px;
-    text-align: center;
-}
+      <div class="hero-content">
 
-</style>
+        <div class="container">
+          <div class="row align-items-center">
 
-
-<script>
-
-var c = document.getElementById("mybox")
-var a = document.getElementById("kk")
-var b = document.getElementById("oho")
-var d = document.getElementById("eduuu")
-var e = document.getElementById("soft")
-var f = document.getElementById("rec")
-var g = document.getElementById("etra")
-var h = document.getElementById("footer")
-
-c.onchange=function()
-{
-kk.style.color=c.value
-oho.style.color=c.value
-eduuu.style.color=c.value
-soft.style.color=c.value
-rec.style.color=c.value
-etra.style.color=c.value
-footer.style.background=c.value
-
-a.style.color=c.value
-b.style.color=c.value
-d.style.color=c.value
-e.style.color=c.value
-f.style.color=c.value
-g.style.color=c.value
-h.style.background=c.value
-}
-
-</script>
-
-
-<div class="row">
-
- <div class="coloum col-sm-12 col-md-12 col-lg-12 col-xl-12" >  
-<img src="images/ket.png" class="img-fluid float-end " id="pro">
-
-  
-
-<h1 class="display-1 " id="kk">KETAN VERMA</h1>
-
-
-<h1 class="display-4" id="kk1">  <span id="kab"> </span></h1>
-
-
-
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-
-      <script>
-    var typed = new Typed('#kab', {
-      strings: ['UI UX DESIGNER','WEB DESIGNER.','WEB DEVELOPER.', '3D ARTIST.','MOTION GRAPHIC DESIGNER.','GRAPHIC DESIGNER.', 'FULL STACK DEVELOPER'],
-      typeSpeed: 60,
-      backSpeed:60,
-    loop: true
-  
-    });
-  </script>
-
-  
-
-
-
-
-
-<div id="tet">
-<p class="kn fs-5  " id="about">Hello!! Everyone my self Ketan verma I’m a passionate UI/UX Designer dedicated to creating intuitive and visually appealing digital experiences. My design approach centers around empathy, creativity, and problem-solving — ensuring every interface I design not only looks great but truly meets users’ needs.
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1><span class="accent-text">Ketan Verma </span></h1>
+                <h2>UI-UX Designer</h2>
+                <p class="lead">I'm a <span class="typed" data-typed-items="UI/UX Designer, Web Designer, Web Developer, 3D Artist , Motion Graphic Designer"></span></p>
+                <p class="description">Hello!! Everyone my self Ketan verma I’m a passionate UI/UX Designer dedicated to creating intuitive and visually appealing digital experiences. My design approach centers around empathy, creativity, and problem-solving — ensuring every interface I design not only looks great but truly meets users’ needs.
 Proficient in tools like Figma, Adobe XD, Sketch, and more, I focus on delivering designs that balance aesthetics with functionality. I stay curious about new design trends, usability practices, and emerging technologies to keep my work fresh and effective</p>
-</div>
-</div>
 
-</div>
+                <div class="hero-actions">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
 
+                <div class="social-links">
+                  
+                  <a href="https://www.behance.net/ketanverma4"><i class="bi bi-behance"></i></a>
+                  <a href="https://ketan2025.github.io/web/"><i class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/ketan-verma-18471b34b/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
 
-<style>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="images/3.png" alt="Alexander Chen" class="profile-image">
+                </div>
+              </div>
+            </div>
 
-    #oho{ text-align: center;
-  font-family: "Fira Sans", sans-serif;
- font-size: 50px;
-  font-weight: 700;
-  font-style: italic;}
-
-
-  .info li{font-size: 18px;
-      text-align: justify;
-   
-    
-   
-  margin: 8px;
-  padding: 2px;
-  font-size: 20px;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 500;
-  
-  }
- 
-  
-
-  .info span{color:rgb(0, 0, 0);
-font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  }
-
-  
-  .pic
-  {width: 120px;}
-   .pic2
-  {width: 80px;
-   margin: 12px;
-padding: px;}
-  .pica{width:250px}
-  .pica3{width:250px}
-</style>
-
-<div class="info">
-
-<h1 id="oho"> General info </h1>
-
-<ul style="list-style: none;">
- <li><span>Date of Birth : </span>Dec 09 2003</li>
-<li><span>Address : </span>B-141 Shalimar Garden</li>
-<li><span>E-mail : </span>kv158818@gmail.com</li>
-<li><span>Phone : </span>+91-9958772498</li>
-</ul>
-
-</div>
-
-
-<style>
-  .display-2 {
-text-align: center;
-
-font-family: "Fira Sans", sans-serif;
- font-size: 60px;
-  font-weight: 700;
-  font-style: italic;
-  color: black;
- }
-
- #education{
-padding: 10px;}
-
-  
-#st{
-  text-align: center;
- 
- padding: 10px;
-}
-
-
-#bv{width: 405px;
-  padding: 10px;
-  margin-right: 30px; 
-  border-radius: 50px;
-}
-
-
-
-#bv:hover
-{width: 410px;
-  padding: 10px;
-  margin-right: 30px; 
-  border-radius: 50px;
-  transition: 0.5s;
-}
-
-
-</style>
-
-<div class="edu m-3">
-  <h1 class="display-2 m-4" id="eduuu"> Education</h1>
-</div>
-
-<div id="education">
- <div id="st"> 
-             <h3>1. UI-UX,3D,MOTION GRAPHIC</h3> 
-              <h4> 2022-2025 Arena Animation</h4>    
-</div>
- <div id="st"> 
-             <h3>2. Graduation</h3> 
-              <h3> 2022-2025 DU</h3>
-              <h4> 1st Divison</h4>      
-</div>
-
-<div id="st"> 
-             <h3>3. Senior Secondary Education</h3> 
-              <h3> 2021-2022 ST.Lawrence School</h3>
-              <h4> 94.5%</h4>      
-</div>
-<div id="st"> 
-             <h3>4. Secondary Education</h3> 
-              <h3> 2019-2020 ST.Lawrence School</h3>
-              <h4> 84.5%</h4>      
-</div>
-</div>
-<style>
-    #pp{width: 123px;
-    padding: -10px;
-    transition: 0.5s;
-margin-left: 5px;
- border-style: solid;
-  border-width: 1px;
-   border-width: medium;
-   margin-top: 6px;
-   border-radius: 15px; 
-    border-color: transparent;}
-
-    #pp:hover{width: 125px;
-    padding: -10px;
-    transition: 0.5s;
-margin-left: 5px;
- border-style: solid;
-  border-width: 1px;
-   border-width: medium;
-   margin-top: 6px;
-   border-radius: 15px; 
-    border-color: rgb(0, 255, 225);}
-
-
-.software{
-        text-align: center;
-    }
-   
-
-
-    @media screen and (max-width: 380px){
- #pp{width: 125px;
-    padding: -10px;
-    }
-    .software{
-        text-align: center;
-    }
-    }
-</style>
-<div class="edu m-3">
-  <h1 class="display-2 m-4" id="soft"> Software Skills</h1>
-</div>
-<div class="software">
-    <img src="images/nag11.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag12.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag13.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag14.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag15.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag16.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag17.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag18.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag19.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag7.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag8.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag9.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag10.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag5.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag6.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag20.png" class="img-fluid" alt="..."id="pp">
-   <img src="images/nag1.png" class="img-fluid" alt="..." id="pp">
-      <img src="images/nag2.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag3.png" class="img-fluid" alt="..."id="pp">
-      <img src="images/nag4.png" class="img-fluid" alt="..."id="pp">
-      
-      
-      
-      
-</div>
-
-
-
-
-
-<div class="edu m-3">
-  <h1 class="display-2 m-4" id="rec"> Recent Projects </h1>
-  <a href="AI.html"><img src="images/generated.jpg"  class="img-fluid" id="bv"></a>
-  <a href="SMURF.HTML"><img src="images/sm.jpg"  class="img-fluid" id="bv"></a>
-  <a href="aotm4.html"><img src="images/hhh.jpg"  class="img-fluid" id="bv"></a>
-   
-</div>
-
-
-
-
-</div>
-
-<div class="edu m-3">
-  <h1 class="display-2 m-4" id="etra"> Extra Skills</h1>
-</div>
-
-
-  <div style="background-color: white; border-radius: 20px;">
-<div
-id="myChart" style="width:120%; max-width:380px; height:300px; margin: auto; background-color: rgb(255, 0, 0);">
-</div>
-
- </div>
-<script>
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-function drawChart() {
-
-// Set Data
-const data = google.visualization.arrayToDataTable([
-  ['Contry', 'Mhl'],
-  ['Hardworking',54.8],
-  ['Creative',48.6],
-  ['Inspiration',44.4],
-  ['Sports',23.9],
-  ['Team working',14.5]
-]);
-
-// Set Options
-const options = {
-  title:'MY EXTRA SKILLS',
-  is3D:true
-};
-
-// Draw
-const chart = new google.visualization.PieChart(document.getElementById('myChart'));
-chart.draw(data, options);
-
-}
-</script>
-<style>
-  footer{background-color: #024f7e;
-  
-    color: white;}
-footer h1{
-  text-align: center;
-  font-family: "Fira Sans", sans-serif;
-  padding: 5px;
-  margin-bottom: 20px;
-}
-</style>
-<div class="social m-5 border border-info p-2 mb-2"  >
-<a href="https://www.instagram.com/the_digital_studio912?igsh=MWNiYnB5MWc3aGVrcQ=="> <img src="images/ig.png" class="pic "></a>
-<a href="https://www.pinterest.com/"> <img src="images/pt-01.png" class="pic"></a>
-<a href="https://www.facebook.com/?gad_source=1&gad_campaignid=22684729567&gbraid=0AAAABAHmlttpqkKCCNSvgDKgGd_ukkkdZ&gclid=CjwKCAjwsZPDBhBWEiwADuO6ywKl50d7-7xmGQW2eGDW6J4NqVbLbc5tN02uWF4JinL0xtBA2UWABBoCodAQAvD_BwE"> <img src="images/fb.png" class="pic"></a>
-<a href="https://ketanverma3.artstation.com/"> <img src="images/at.png" class="pic2"></a>
-<a href="https://www.behance.net/ketanverma4"> <img src="images/behance_black_logo_icon_147158.png" class="pic2"></a>
-<a href="#"> <img src="images/jh.png" class="pica "> </a>
-<a href="#"> <img src="images/jh2.png" class="pica3 "> </a>
-</div>
-<footer id="footer" class="footer position-relative ">
-<h1 id="me"> Contact</h1>
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          
-          <div class="footer-contact pt-3">
-            <p>KETAN VERMA</p>
-            <p>Shalimar Garden </p>
-            <p class="mt-3"><strong>Phone:</strong> <span>9958772498</span></p>
-            <p><strong>Email:</strong> <span>kv158818@gmail.com</span></p>
           </div>
-          
         </div>
+      </div>
 
-        <div class="col-lg-3 col-md-3 footer-links">
-          <h4>INSIGHT</h4>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Links</li>
-            <li>Portpholio</li>
-            <li>skill</li>
-          
-          </ul>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-image">
+                  <img src="images/sss.jpg" alt="Profile Image" class="img-fluid">
+                </div>
+                <div class="profile-badge">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+              </div>
+
+              <div class="profile-content">
+                <h3>Ketan verma</h3>
+                <p class="profession">UI-UX,3d Designer</p>
+
+                <div class="contact-links">
+                  <a href="mailto:kv158818@gmail.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                  kv158818@gmail.com
+                  </a>
+                  <a href="tel:9958772498" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    9958772498
+                  </a>
+                  <a href="Shalimar Garden" class="contact-item">
+                    <i class="bi bi-geo-alt"></i>
+                    Delhi,India
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="section-header">
+                <span class="badge-text">Get to Know Me</span>
+                <h2>Passionate About Designing</h2>
+              </div>
+
+              <div class="description">
+                <p>“I'm a UI/UX designer driven by a passion for crafting intuitive, user-centered digital experiences. For me, design is not just about aesthetics—it's about empathy, clarity, and creating seamless interactions that make people's lives easier.”</p>
+
+              </div>
+
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <div class="stat-number">10</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">1+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">98%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+                </div>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Specialization</span>
+                    <span class="detail-value">UI/UX Design &amp; Development</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Experience</span>
+                    <span class="detail-value">1 year</span>
+                  </div>
+                </div>
+                <div class="detail-row">
+                  <div class="detail-item">
+                    <span class="detail-label">Education</span>
+                    <span class="detail-value">Certificate in UI-UX,3D,Motion Graphic </span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Languages</span>
+                    <span class="detail-value">English,Hindi </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-section">
+                <a href="images/resume.pdf" class="btn btn-primary">
+                  <i class="bi bi-download"></i>
+                  Download Resume
+                </a>
+                <a href="#" class="btn btn-outline">
+                  <i class="bi bi-chat-dots"></i>
+                  Let's Talk
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="col-lg-3 col-md-3 footer-links">
-          <h4>Services</h4>
-          <ul>
-             <li>Graphic Designing</li>
-             <li> Motion Graphic Designing</li>
-             <li>3D Designing</li>
-             <li> Web Designing</li>
-             <li> Web Development</li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Education</h4>
-          <ul>
-            <li>Graduate</li>
-            <li>UI-UX Designer</li>
-             <li> Motion Graphic  Designer</li>
-             <li>3D  Designer</li>
-             
-          </ul>
-        </div>
-
-        
 
       </div>
-    </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="stats-wrapper">
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
+                <div class="icon-wrapper">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                </div>
+                <!-- <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span> -->
+                <p>Team Working</p>
+              </div>
+              <!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-wrapper">
+                  <i class="bi bi-hammer"></i>
+                </div>
+                <!-- <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span> -->
+                <p> Hard Working</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="icon-wrapper">
+                  <i class="bi bi-bar-chart"></i>
+                </div>
+                <!-- <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span> -->
+                <p>Multi Tasking</p>
+              </div><!-- End Stats Item -->
+
+              <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-wrapper">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <!-- <span data-purecounter-start="0" data-purecounter-end="" data-purecounter-duration="1" class="purecounter"></span> -->
+                <p>Discipline</p>
+              </div><!-- End Stats Item -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p> Different FieldSkill set </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Web Development</h3>
+
+              <div class="skills-animation">
+
+<div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Figma</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Proficient in Figma for collaborative UI/UX design, prototyping, and seamless team workflows</div>
+                </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script>
-  ScrollReveal({ 
-  reset: false,
-  distance: '80px',
-  duration: 1200,
-  delay: 50
 
-});
 
-  ScrollReveal().reveal("#mybox,#oho", { origin: 'left'});
-  ScrollReveal().reveal("#pro", { origin: 'right'});
-  ScrollReveal().reveal("#pp", { origin: 'right'});
-  ScrollReveal().reveal("#eduuu,.edu", { origin: 'bottom'});
-</script>
-  </body>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Adobe Xd</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Skilled in Adobe XD for designing intuitive, user-centered UI/UX prototypes and interactive wireframes.</div>
+                </div>
+
+
+
+
+
+
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>HTML</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Proficient in HTML5 for building clean, accessible, and well-structured web content.</div>
+                </div>
+
+
+  <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>CSS</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Proficient in CSS for crafting responsive, visually engaging, and user-friendly web layouts.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>JavaScript</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Skilled in JavaScript to create interactive, dynamic, and user-focused web experiences</div>
+                </div>
+                
+     
+         
+
+<div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>JQuery</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experienced in using jQuery to simplify DOM manipulation, handle events, and enhance UI interactions.</div>
+                </div>
+
+
+
+                
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Bootstrap</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Proficient in Bootstrap for building responsive, mobile-first, and visually consistent web layouts.</div>
+                </div>
+
+
+
+ <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Wordpress</h4>
+                    <span class="skill-percentage">84%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Skilled in WordPress development for creating custom themes, managing content, and building dynamic, user-friendly websites</div>
+                </div>
+           
+  <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>PHP</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experienced in PHP for developing dynamic website functionalities and integrating with content management systems like WordPress</div>
+                </div>
+
+
+
+
+
+              </div>
+            </div><!-- End Frontend Skills -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>3D Skills Motion and Graphic</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>3D Maya</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">"Proficient in Autodesk Maya for creating high-quality 3D models, animations, and visual effects for digital media and interactive design.</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Substance Painter  </h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Skilled in Substance Painter for creating detailed, PBR-ready textures and materials with industry-standard workflows</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Zbrush  </h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experienced in Marmoset Toolbag for real-time rendering, material setup, and professional-quality asset presentation.</div>
+                </div>
+
+
+
+<div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4> Marmoset </h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experienced in Zbrush for real-time rendering, material setup, and professional-quality asset presentation.</div>
+                </div>
+
+
+
+
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>After Effect  </h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Proficient in After Effects for motion graphics, visual effects, and dynamic video compositing.Skilled in Premiere Pro for professional video editing, color correction, and seamless storytelling
+                  </div>
+                </div>
+
+
+
+                  <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4> Premier Pro </h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">.Skilled in Premiere Pro for professional video editing, color correction, and seamless storytelling
+                  </div>
+                </div>
+
+
+  <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Photoshop </h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Expert in Photoshop for advanced image editing, retouching, and digital artwork creation.
+                  </div>
+                </div>
+
+
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Illustrator </h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Proficient in Illustrator for creating scalable vector graphics, logos, and detailed illustrations.
+                  </div>
+                </div>
+
+<div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Coraldraw and Indesign </h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Skilled in CorelDRAW for vector illustration, layout design, and precise graphic creation Proficient in InDesign for professional print and digital layout design, including brochures, magazines, and ebooks.
+                  </div>
+                </div>
+
+
+
+
+
+
+              </div>
+            </div><!-- End Backend Skills -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Hello!! Everyone my self Ketan verma I’m a passionate UI/UX Designer dedicated to creating intuitive and visually appealing digital experiences. My design approach centers around empathy, creativity, and problem-solving — ensuring every interface I design not only looks great but truly meets users’ needs. Proficient in tools like Figma, Adobe XD, Sketch, and more, I focus on delivering designs that balance aesthetics with functionality.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <!-- Left column with summary and contact -->
+          <div class="col-lg-4">
+            <div class="resume-side" data-aos="fade-right" data-aos-delay="100">
+              <div class="profile-img mb-4">
+                <img src="images/3.png" alt="Profile" class="img-fluid rounded">
+              </div>
+
+              <h3>About Me</h3>
+              <p>I am a UI/UX and 3D Designer with expertise in creating user-centered digital experiences that are both intuitive and visually engaging. Skilled in wireframing, prototyping, and design systems, I focus on transforming complex ideas into clean, functional interfaces. My goal is to design products that balance usability, accessibility, and aesthetic appeal while aligning with business objectives</p>
+
+              <h3 class="mt-4">Contact Information</h3>
+              <ul class="contact-info list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> B 141 C-3 Shalimar Garden</li>
+                <li><i class="bi bi-envelope"></i> kv158818@gmail.com</li>
+                <li><i class="bi bi-phone"></i> 9958772498</li>
+            
+              </ul>
+
+              <div class="skills-animation mt-4">
+                <h3>Professional Skills</h3>
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>UI-UX Designer</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Web Developer</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>3D Artist</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between">
+                    <span>Motion Graphic Designer</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column with experience and education -->
+          <div class="col-lg-8 ps-4 ps-lg-5">
+            <!-- Experience Section -->
+            <div class="resume-section" data-aos="fade-up">
+              <h3><i class="bi bi-briefcase me-2"></i>Professional Experience</h3>
+
+
+<div class="resume-item">
+                <h4>Freelance 3D Artist</h4>
+                <h5>2024-Present</h5>
+                <p class="company"><i class="bi bi-building"></i> Freelancer</p>
+                <ul>
+                  <li>Freelance 3d modeler</li>
+                  
+                </ul>
+              </div>
+
+
+              <div class="resume-item">
+                <h4>Graphic Designer</h4>
+                <h5>2022-2023</h5>
+                <p class="company"><i class="bi bi-building"></i>Spring Field School</p>
+                <ul>
+                  <li>Graphic Designer in Spring Field School</li>
+                 
+                </ul>
+              </div>
+
+              
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="100">
+              <h3><i class="bi bi-mortarboard me-2"></i>Education</h3>
+
+              <div class="resume-item">
+                <h4>UI-UX,3D and Motion Graphic Designer</h4>
+                <h5>2022-2025</h5>
+                <p class="company"><i class="bi bi-building"></i> Arena Animation</p>
+              
+              </div>
+
+              <div class="resume-item">
+                <h4>Bachelor In Arts History</h4>
+                <h5>2022-2025</h5>
+                <p class="company"><i class="bi bi-building"></i> Delhi University</p>
+                
+              </div>
+
+
+
+
+              <div class="resume-item">
+                <h4>Senior Secondary</h4>
+                <h5>2021-2022</h5>
+                <p class="company"><i class="bi bi-building"></i>95% ST Lawrence Senior Secondary school</p>
+                
+              </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="resume-section" data-aos="fade-up" data-aos-delay="200">
+              <h3><i class="bi bi-award me-2"></i>Certifications</h3>
+
+              <div class="resume-item">
+                <h4>4 Times ARTIST OF THE MONTH WINNER</h4>
+                <h5>ARENA ANIMATION</h5>
+              </div>
+
+              <div class="resume-item">
+                <h4> CERTIFICATE IN AI FOR ALL BY INTEL</h4>
+                
+              </div>
+
+
+
+              <div class="resume-item">
+                <h4>  CERTIFICATE IN LEARN CHATGPT</h4>
+                
+              </div>
+
+
+
+
+              <div class="resume-item">
+                <h4> CERTIFICATE MIDJOURNEY AND AI BY UDEMY</h4>
+                
+              </div>
+
+
+
+              <div class="resume-item">
+                <h4> CERTIFICATE IN WORDPRESS WEB DEVELOPMENT BY UDEMY</h4>
+                
+              </div>
+
+              <div class="resume-item">
+                <h4> CERTIFICATE IN APP DESIGN IN FIGMA BY UDEMY WORK</h4>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row">
+            <div class="col-lg-3 filter-sidebar">
+              <div class="filters-wrapper" data-aos="fade-right" data-aos-delay="150">
+                <ul class="portfolio-filters isotope-filters">
+                  <li data-filter="*" class="filter-active">All Projects</li>
+                  <li data-filter=".filter-photography">HTML/CSS</li>
+                  <li data-filter=".filter-design">Bootstrap</li>
+                
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div class="row gy-4 portfolio-container isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
+                  <div class="portfolio-wrap">
+                    <img src="images/ai2.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">AI website</span>
+                       
+                        <div class="portfolio-links">
+                          <a href="images/ai2.jpg" class="glightbox" title="AI WEBSITE"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://ketan2025.github.io/web/AI.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="images/bus.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Bootstrap</span>
+                        <h4>Travel Website</h4>
+                        <div class="portfolio-links">
+                          <a href="images/bus.jpg" class="glightbox" title="Travel Website"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://ketan2025.github.io/web/bustravel.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-automotive">
+                  <div class="portfolio-wrap">
+                    <img src="images/smu.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">HTML/CSS</span>
+                        <h4>Smurf website</h4>
+                        <div class="portfolio-links">
+                          <a href="images/smu.jpg" class="glightbox" title="Smurf website"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://ketan2025.github.io/web/SMURF.HTML" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-nature">
+                  <div class="portfolio-wrap">
+                    <img src="images/race.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">HTML/CSS</span>
+                        <h4>F1 website</h4>
+                        <div class="portfolio-links">
+                          <a href="images/race.jpg" class="glightbox" title="F1 website"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://ketan2025.github.io/web/f1%20website.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-photography">
+                  <div class="portfolio-wrap">
+                    <img src="images/site4.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">Bootstrap</span>
+                        <h4>Educational Site</h4>
+                        <div class="portfolio-links">
+                          <a href="images/site4.jpg" class="glightbox" title="Educational Site"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://ketan2025.github.io/web/botesite.html" title="Educational Site"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-design">
+                  <div class="portfolio-wrap">
+                    <img src="images/hhh.jpg" class="img-fluid" alt="Portfolio Image" loading="lazy">
+                    <div class="portfolio-info">
+                      <div class="content">
+                        <span class="category">HTML/CSS</span>
+                        <h4>Cleaning app</h4>
+                        <div class="portfolio-links">
+                          <a href="images/hhh.jpg" class="glightbox" title="Cleaning app"><i class="bi bi-plus-lg"></i></a>
+                          <a href="https://ketan2025.github.io/web/aotm4.html" title="Cleaning app"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End Portfolio Item -->
+
+              </div><!-- End Portfolio Container -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2> My Services</h2>
+   
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="service-header">
+          <div class="row align-items-center">
+            <div class="col-lg-8 col-md-12">
+              <div class="service-intro">
+                <h2 class="service-heading">
+                  <div>Best designing</div>
+                  <div><span>performance </span></div>
+                </h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="service-summary">
+                <p>
+                 Design in business helps build a strong brand identity, improves customer experience, and drives innovation. It creates a competitive edge by making products, services, and communication more appealing, efficient, and memorable.
+                </p>
+                
+                
+        
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              
+              <h3>
+                <a href="service-details.html">
+                  Creative <span>branding</span>
+                </a>
+              </h3>
+              <p>
+               A creative brand goes beyond visuals—it tells a story, sparks emotions, and builds meaningful connections with people. It blends innovation with identity, making every touchpoint memorable and engaging. By standing out with originality and consistency, a creative brand inspires trust, loyalty, and long-term growth in a competitive market.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-gem"></i>
+              </div>
+              
+              <h3>
+                <a href="service-details.html">
+                  Better<span>Design</span>
+                </a>
+              </h3>
+              <p>
+        A better design is not just about looks—it about creating seamless experiences that are simple, functional, and impactful. It bridges creativity with usability, making products and services more engaging and effective. With thoughtful design, businesses build trust, attract attention, and deliver value that lasts.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card position-relative z-1">
+              <div class="service-icon">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              
+              <h3>
+                <a href="service-details.html">
+                  Marketing <span>strategies</span>
+                </a>
+              </h3>
+              <p>
+          Better marketing goes beyond promotion—it’s about understanding people, telling the right story, and creating lasting impact. It connects brands with audiences through creativity, strategy, and trust. With effective marketing, businesses stand out, build loyalty, and drive sustainable growth.
+              </p>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box">
+              <h3>Contact Info</h3>
+             
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>My Location</h4>
+                  <p>B141 C3 Shalimar Garden Ghaziabad</p>
+                  
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>9958772498</p>
+                 
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>kv158818@gmail.com</p>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form">
+              <h3>Get In Touch</h3>
+             
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                  
+                    
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main34.js"></script>
+
+</body>
+
 </html>
